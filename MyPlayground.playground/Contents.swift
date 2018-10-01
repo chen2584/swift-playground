@@ -55,3 +55,15 @@ singleArg_method(arg1: "Chen")
 multipleArg_method(arg1: "codemobile", arg2: 1234, arg3: false)
 multipleArg_methodWithExternal(a1: "1234", a2: 1234, arg3: false)
 multipleArg_methodWithoutExternal("Chen", 1, true)
+
+// Optional Parameters
+// null == nil
+// var t1 = nil will error
+var t2:String? = nil
+t2 = "hello world"
+print(t2!) // ! is unwrap คือบอกว่ามีค่าแน่ๆ
+var sum = "result" + t2!
+
+var aPossibleNumber = "1234"
+var out = Int(aPossibleNumber) // แปลงค่า string เป็น  int
+print(out)
